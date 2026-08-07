@@ -1,0 +1,11 @@
+abi_version=2.3.0
+builtins_platform=WASM
+compiler_version=2.3.21
+ir_signature_versions=1,2
+jsOutputName=LanguageLearner-webApp
+language_features=+AllowAnyAsAnActualTypeForExpectInterface +JsAllowImplementingFunctionInterface +MultiPlatformProjects
+metadata_version=2.3.0
+serializedIrFileFingerprints=vxz93xyn3ura.3840j1caqmm3l
+serializedKlibFingerprint=39is0kni3qhih.3qklti5a7v9v1
+unique_name=LanguageLearner\:webApp
+wasm_targets=wasm-js

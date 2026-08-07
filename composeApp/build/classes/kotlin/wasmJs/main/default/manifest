@@ -1,0 +1,11 @@
+abi_version=2.3.0
+builtins_platform=WASM
+compiler_version=2.3.21
+ir_signature_versions=1,2
+jsOutputName=LanguageLearner-composeApp
+language_features=+AllowAnyAsAnActualTypeForExpectInterface +JsAllowImplementingFunctionInterface +MultiPlatformProjects
+metadata_version=2.3.0
+serializedIrFileFingerprints=2fhcpz6rkwivv.18v9rfcd92whn 5a6gq1edx7p7.7k45thqhk2bu 2xbhi6877ajrh.2io5gc9dcrtaz 1d3q05i0lam1q.1wgd7ernfz2oa 2opm5kxyk1r97.2xp01mxq9qi8a 2qimsfkm017rp.8w17xujc99s4 1e06djdahomqh.2q2ign2q48wah bawdqbn3oyqw.2f4x6yuer6nlh 8s4r46j1h7f6.3horlecz7z1a9 5tgjh3g9cz5n.28ukskoqw02hl 2o03sl7lpkqzd.28qkkw2toqm93 h3yrnvvsx4md.227mrpk955q87 mzqfi3vyzr75.vxe7umog369p 8gkq9duu6g0.hgeolh3vf5kw 2eowhixg73d8c.cc4t93id3001 dz97lbqrmncy.tqk9xg68dhcd 261v8om606uay.ufewj02klsd9 29anx42aeild6.2urvxupd3kjlo 2uhmyp4h3khat.3k0mpgizvo3dk 13wiushjtv0fo.5k3w2nqcwviu
+serializedKlibFingerprint=2f12v8b0qex39.2n867lxuomyg6
+unique_name=LanguageLearner\:composeApp
+wasm_targets=wasm-js

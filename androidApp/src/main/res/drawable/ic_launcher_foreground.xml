@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Main Speech Bubble Shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,32 H76 A8,8 0 0 1 84,40 V60 A8,8 0 0 1 76,68 H62 L54,78 L46,68 H32 A8,8 0 0 1 24,60 V40 A8,8 0 0 1 32,32 Z" />
+    <!-- Stylized 'A' - using stroke for a modern look -->
+    <path
+        android:strokeColor="#2979FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M46,58 L54,42 L62,58 M49,52 H59" />
+</vector>

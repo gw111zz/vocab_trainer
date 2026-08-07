@@ -1,0 +1,38 @@
+ | 11:26:43.724 | DevTools | Info  | RecompilerKt | Recompiler | Running 'Gradle'...
+ | 11:26:45.541 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | Reusing configuration cache.
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.745 | Build    | Warn  | Gradle | DefaultDispatcher-worker-1 | w: Skiko dependencies' versions are incompatible.
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 |     io.coil-kt.coil3:coil-core-jvm:3.0.4
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 |     \--- org.jetbrains.skiko:skiko:0.8.4 -> 0.144.6
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | This may lead to compilation errors or unexpected behavior at runtime.
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | Such version mismatch might be caused by dependency constraints in one of the included libraries.
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | You can inspect resulted dependencies tree via `./gradlew :desktopApp:dependencies  --configuration jvmRuntimeClasspath`.
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | See more details in Gradle documentation: https://docs.gradle.org/current/userguide/viewing_debugging_dependencies.html#sec:listing-dependencies
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | Note: Skiko is considered implementation detail in Compose Multiplatform and might be incompatible across versions.
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | Please align Skiko dependencies to the same version. If possible, avoid direct Skiko references and use Compose APIs instead.
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.745 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.748 | Build    | Warn  | Gradle | DefaultDispatcher-worker-1 | w: Skiko dependencies' versions are incompatible.
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 |     io.coil-kt.coil3:coil-core-jvm:3.0.4
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 |     \--- org.jetbrains.skiko:skiko:0.8.4 -> 0.144.6
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | This may lead to compilation errors or unexpected behavior at runtime.
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | Such version mismatch might be caused by dependency constraints in one of the included libraries.
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | You can inspect resulted dependencies tree via `./gradlew :composeApp:dependencies  --configuration desktopRuntimeClasspath`.
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | See more details in Gradle documentation: https://docs.gradle.org/current/userguide/viewing_debugging_dependencies.html#sec:listing-dependencies
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | Note: Skiko is considered implementation detail in Compose Multiplatform and might be incompatible across versions.
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | Please align Skiko dependencies to the same version. If possible, avoid direct Skiko references and use Compose APIs instead.
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:45.748 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:46.302 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 
+ | 11:26:46.303 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | BUILD SUCCESSFUL in 2s
+ | 11:26:46.303 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | 16 actionable tasks: 5 executed, 11 up-to-date
+ | 11:26:46.303 | Build    | Info  | Gradle | DefaultDispatcher-worker-1 | Configuration cache entry reused.
+ | 11:26:46.759 | App      | Info  | ResolveDirtyKt | Compose Runtime Analyzer
+    | Resolved 'dirty' @Composable scopes within 436.834us
+    |   ~ No @Composable is dirty
+    | 

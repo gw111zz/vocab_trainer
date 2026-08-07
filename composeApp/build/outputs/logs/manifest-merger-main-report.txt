@@ -1,0 +1,13 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/s/AndroidStudioProjects/KmpLanguageLearner/composeApp/build/intermediates/tmp/ProcessLibraryManifest/tempAndroidManifest11944284819940789427.xml:2:13-83
+INJECTED from /Users/s/AndroidStudioProjects/KmpLanguageLearner/composeApp/build/intermediates/tmp/ProcessLibraryManifest/tempAndroidManifest11944284819940789427.xml:2:13-83
+	package
+		INJECTED from /Users/s/AndroidStudioProjects/KmpLanguageLearner/composeApp/build/intermediates/tmp/ProcessLibraryManifest/tempAndroidManifest11944284819940789427.xml
+	xmlns:android
+		ADDED from /Users/s/AndroidStudioProjects/KmpLanguageLearner/composeApp/build/intermediates/tmp/ProcessLibraryManifest/tempAndroidManifest11944284819940789427.xml:2:23-81
+uses-sdk
+INJECTED from /Users/s/AndroidStudioProjects/KmpLanguageLearner/composeApp/build/intermediates/tmp/ProcessLibraryManifest/tempAndroidManifest11944284819940789427.xml reason: use-sdk injection requested
+INJECTED from /Users/s/AndroidStudioProjects/KmpLanguageLearner/composeApp/build/intermediates/tmp/ProcessLibraryManifest/tempAndroidManifest11944284819940789427.xml
+	android:minSdkVersion
+		INJECTED from /Users/s/AndroidStudioProjects/KmpLanguageLearner/composeApp/build/intermediates/tmp/ProcessLibraryManifest/tempAndroidManifest11944284819940789427.xml
