@@ -420,5 +420,176 @@ val initialItalianSets = listOf(
             VocabularyWord("Pecora", "Sheep"),
             VocabularyWord("Leone", "Lion")
         )
+    ),
+    VocabularySet(
+        id = "it-possessive",
+        name = "Possessive",
+        words = listOf(
+            VocabularyWord("mio", "my (masculine, singular)"),
+            VocabularyWord("mia", "my (femanine, singular)"),
+            VocabularyWord("miei", "my (masculine, plural)"),
+            VocabularyWord("mie", "my (femanine, plural)"),
+            VocabularyWord("tuo", "your (masculine, informal, singular)"),
+            VocabularyWord("tua", "your (femanine, informal, singular)"),
+            VocabularyWord("suo", "his/her (masculine, singular)"),
+            VocabularyWord("sua", "his/her (femanine, singular)"),
+            VocabularyWord("nostro", "our (masculine, singular)"),
+            VocabularyWord("nostra", "our (femanine, singular)"),
+            VocabularyWord("nostri", "our (masculine, plural)"),
+            VocabularyWord("nostre", "our (femanine, plural)"),
+            VocabularyWord("vostro", "your (masculine, formal, singular)"),
+            VocabularyWord("vostra", "your (femanine, formal, singular)"),
+            VocabularyWord("loro", "your (plural, formal)"),
+            VocabularyWord("loro", "their")
+        )
+    ),
+    VocabularySet(
+        id = "it-possessive-examples",
+        name = "Possessive examples",
+        words = listOf(
+            VocabularyWord("la mia macchina", "my car"),
+            VocabularyWord("i miei libri", "my books"),
+            VocabularyWord("il suo libro", "his book"),
+            VocabularyWord("il suo vestito", "her dress"),
+            VocabularyWord("il nostro gatto", "our cat"),
+            VocabularyWord("il vostro giardino", "your (formal) garden"),
+            VocabularyWord("le loro scarpe", "your (formal) shoes"),
+            VocabularyWord("i miei libri", "my books"),
+            VocabularyWord("le mie amiche", "my friends"),
+            VocabularyWord("mio lavoro", "my workplace")
+        )
+    ),
+    VocabularySet(
+        id = "it-meal",
+        name = "Talking about a meal",
+        words = listOf(
+            VocabularyWord("È molto gustoso", "It's very tasty"),
+            VocabularyWord("È saporito", "It's flavorful"),
+            VocabularyWord("Sono sazio/sa", "I'm full"),
+            VocabularyWord("Mi è piaciuto", "I liked it"),
+            VocabularyWord("È stato incredibile", "It was amazing"),
+            VocabularyWord("Il cibo era eccellente", "The food was excellent"),
+            VocabularyWord("L'atmosfera era accogliente", "The atmosphere was cozy")
+        )
+    ),
+    VocabularySet(
+        id = "it-weather",
+        name = "Weather",
+        words = listOf(
+            VocabularyWord("domani farà caldo", "tomorrow it will be hot"),
+            VocabularyWord("che tempo fa a Roma?", "what's the weather in Rome?"),
+            VocabularyWord("fa caldo oggi", "it's hot today"),
+            VocabularyWord("ventoso", "windy"),
+            VocabularyWord("soleggiato", "sunny")
+        )
+    ),
+    VocabularySet(
+        id = "it-school",
+        name = "School",
+        words = listOf(
+            VocabularyWord("il banco", "desk"),
+            VocabularyWord("la sedia", "chair"),
+            VocabularyWord("la lavagna", "board (i.e. whiteboard, blackboard)"),
+            VocabularyWord("il cestino", "waste paper basket"),
+            VocabularyWord("il quaderno", "notebook"),
+            VocabularyWord("la classe", "class (not classroom)"),
+            VocabularyWord("il libro", "book"),
+            VocabularyWord("la mensa", "canteen"),
+            VocabularyWord("la penna", "pen"),
+            VocabularyWord("la matita", "pencil"),
+            VocabularyWord("leggere", "to read"),
+            VocabularyWord("scrivere", "to write"),
+            VocabularyWord("imparare", "to learn"),
+            VocabularyWord("parlare", "to speak"),
+            VocabularyWord("contare", "to count"),
+            VocabularyWord("cantare", "to sing")
+        )
+    ),
+    VocabularySet(
+        id = "it-writing-words",
+        name = "Writing words",
+        words = listOf(
+            VocabularyWord("annotare", "to note / annotate"),
+            VocabularyWord("il temperino", "pencil sharpener"),
+            VocabularyWord("temperare", "to sharpen"),
+            VocabularyWord("la colla", "glue"),
+            VocabularyWord("incollare", "to glue"),
+            VocabularyWord("colorare", "to colour in"),
+            VocabularyWord("pennarello", "felt-tip pen"),
+            VocabularyWord("la gomma", "rubber"),
+            VocabularyWord("cancellare", "to erase"),
+            VocabularyWord("disegnare", "to draw")
+        )
+    ),
+    VocabularySet(
+        id = "it-professions",
+        name = "Professions",
+        words = listOf(
+            VocabularyWord("l’operaio, l’operaia", "manual labourer"),
+            VocabularyWord("il commesso, la commessa", "sales assistant"),
+            VocabularyWord("l’insegnante", "teacher"),
+            VocabularyWord("l’infermiere, l’infermiera", "nurse"),
+            VocabularyWord("il farmacista, la farmacista", "pharmacist"),
+            VocabularyWord("lo studente, la studentessa", "student"),
+            VocabularyWord("il cameriere, la cameriera", "waiter"),
+            VocabularyWord("l’impiegato, la impiegata", "office worker"),
+            VocabularyWord("il dottore, la dottoressa", "doctor"),
+            VocabularyWord("il casalingo, la casalinga", "house husband, housewife"),
+            VocabularyWord("l’attore, l’attrice", "actor/actress"),
+            VocabularyWord("lo scrittore, la scrittrice", "writer"),
+            VocabularyWord("il cantante, la cantante", "singer")
+        )
+    ),
+    VocabularySet(
+        id = "it-professions-2",
+        name = "Professions 2",
+        words = listOf(
+            VocabularyWord("il panettiere", "baker"),
+            VocabularyWord("il barbiere", "barber"),
+            VocabularyWord("la parrucchiera", "hairdresser"),
+            VocabularyWord("il giornalaio", "newsagent"),
+            VocabularyWord("il giornalista", "journalist"),
+            VocabularyWord("il tabaccaio", "tobacconist"),
+            VocabularyWord("il meccanico", "mechanician"),
+            VocabularyWord("l'elettricista", "electrician"),
+            VocabularyWord("il medico", "doctor"),
+            VocabularyWord("il veterinario", "vet"),
+            VocabularyWord("il muratore", "bricklayer"),
+            VocabularyWord("il fruttivendolo", "greengrocer"),
+            VocabularyWord("il contadino", "farmer"),
+            VocabularyWord("il libraio", "bookseller"),
+            VocabularyWord("il macellaio", "butcher"),
+            VocabularyWord("il falegname", "carpenter"),
+            VocabularyWord("il pescivendolo", "fishmonger"),
+            VocabularyWord("il gioielliere", "jeweler")
+        )
+    ),
+    VocabularySet(
+        id = "it-professions-3",
+        name = "Professions 3",
+        words = listOf(
+            VocabularyWord("il fornaio", "baker"),
+            VocabularyWord("il insegnante", "teacher"),
+            VocabularyWord("il sindaco", "mayor"),
+            VocabularyWord("il ospedale", "hospital"),
+            VocabularyWord("il panificio", "bakery"),
+            VocabularyWord("chi insegna a scuola?", "who teaches in a school?"),
+            VocabularyWord("chi vende le aspirine?", "who sells aspirin?"),
+            VocabularyWord("il commesso", "salesman"),
+            VocabularyWord("l'impiegato", "employee / clerk"),
+            VocabularyWord("l'uomo d'affari", "business man"),
+            VocabularyWord("una grande azienda", "a big company")
+        )
+    ),
+    VocabularySet(
+        id = "it-professions-4",
+        name = "Professions 4",
+        words = listOf(
+            VocabularyWord("l'ufficio", "office"),
+            VocabularyWord("la fabbrica", "factory"),
+            VocabularyWord("l'officina", "workshop"),
+            VocabularyWord("il cantiere", "yard"),
+            VocabularyWord("il pronto soccorso", "emergency room")
+        )
     )
 )
