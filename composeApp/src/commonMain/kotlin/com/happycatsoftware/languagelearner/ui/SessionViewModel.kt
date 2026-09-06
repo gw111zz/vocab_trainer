@@ -41,9 +41,10 @@ class SessionViewModel(
         viewModelScope.launch {
             val allSets = repository.vocabularySets.first()
             val set = allSets.find { it.id == setId }
+            val randomizedSet = set?.copy(words = set.words.shuffled())
             _state.value = _state.value.copy(
-                currentSet = set,
-                isFinished = set?.words?.isEmpty() == true
+                currentSet = randomizedSet,
+                isFinished = randomizedSet?.words?.isEmpty() == true
             )
         }
     }
