@@ -591,5 +591,71 @@ val initialItalianSets = listOf(
             VocabularyWord("il cantiere", "yard"),
             VocabularyWord("il pronto soccorso", "emergency room")
         )
+    ),
+    VocabularySet(
+        id = "it-kitchen",
+        name = "Kitchen",
+        words = listOf(
+            VocabularyWord("la forchetta", "fork"),
+            VocabularyWord("il coltello", "knife"),
+            VocabularyWord("il cucchiaio", "spoon"),
+            VocabularyWord("il cucchiaino", "teaspoon"),
+            VocabularyWord("il piatto", "plate"),
+            VocabularyWord("il bicchiere", "glass"),
+            VocabularyWord("la tazza", "cup"),
+            VocabularyWord("la tazzina", "espresso cup"),
+            VocabularyWord("la pentola", "pot"),
+            VocabularyWord("la padella", "pan"),
+            VocabularyWord("il tovagliolo", "napkin"),
+            VocabularyWord("il frigorifero", "fridge"),
+            VocabularyWord("il forno", "oven"),
+            VocabularyWord("il bollitore", "kettle"),
+            VocabularyWord("il lavandino", "sink")
+        )
+    ),
+    VocabularySet(
+        id = "it-furniture",
+        name = "Furniture",
+        words = listOf(
+            VocabularyWord("il divano", "sofa"),
+            VocabularyWord("la poltrona", "armchair"),
+            VocabularyWord("il tavolo", "table"),
+            VocabularyWord("la sedia", "chair"),
+            VocabularyWord("il letto", "bed"),
+            VocabularyWord("l'armadio", "wardrobe/closet"),
+            VocabularyWord("la scrivania", "desk"),
+            VocabularyWord("la libreria", "bookcase"),
+            VocabularyWord("il comodino", "bedside table"),
+            VocabularyWord("il cassettone", "chest of drawers"),
+            VocabularyWord("lo specchio", "mirror"),
+            VocabularyWord("la lampada", "lamp"),
+            VocabularyWord("il tappeto", "rug/carpet"),
+            VocabularyWord("le tende", "curtains"),
+            VocabularyWord("lo scaffale", "shelf")
+        )
+    ),
+    VocabularySet(
+        id = "it-prepositions-di",
+        name = "Prepositions - di",
+        words = listOf(
+            VocabularyWord("Un bicchiere di vino", "A glass of wine"),
+            VocabularyWord("Una mappa di Firenze", "A map of Florence"),
+            VocabularyWord("Un piatto di pasta", "A plate of pasta"),
+            VocabularyWord("Questa pizza è di Matteo", "This is Matteo’s pizza"),
+            VocabularyWord("Il passaporto è di Katie?", "Is it Katie's passport?")
+        )
+    ),
+    VocabularySet(
+        id = "it-prepositions-a",
+        name = "Prepositions - a",
+        words = listOf(
+            VocabularyWord("Sono a casa", "I’m at home"),
+            VocabularyWord("Andiamo a Roma", "We’re going to Rome"),
+            VocabularyWord("Vado al supermercato", "I’m going to the supermarket"),
+            VocabularyWord("Il nostro hotel è a Roma", "Our hotel is in Rome"),
+            VocabularyWord("Siamo a Positano", "We’re in Positano"),
+            VocabularyWord("A che ora comincia?", "What time does it start?"),
+            VocabularyWord("Alle otto", "At eight")
+        )
     )
 )
