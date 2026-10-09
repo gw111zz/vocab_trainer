@@ -1,5 +1,6 @@
 package com.happycatsoftware.languagelearner.ui.screens
 
+import androidx.compose.foundation.focusable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -34,11 +35,16 @@ fun SessionScreen(
     }
     val state by viewModel.state.collectAsState()
     val focusRequester = remember { FocusRequester() }
+    val columnFocusRequester = remember { FocusRequester() }
 
-    // Auto-focus the text field when a new word is presented
-    LaunchedEffect(state.currentIndex, state.isFinished) {
+    // Auto-focus the text field when a new word is presented or when moving to next is allowed
+    LaunchedEffect(state.currentIndex, state.isFinished, state.canMoveToNext) {
         if (!state.isFinished) {
-            focusRequester.requestFocus()
+            if (state.canMoveToNext) {
+                columnFocusRequester.requestFocus()
+            } else {
+                focusRequester.requestFocus()
+            }
         }
     }
 
@@ -59,11 +65,20 @@ fun SessionScreen(
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text("Session Finished!", style = MaterialTheme.typography.headlineLarge)
                     if (mode == SessionMode.Testing) {
+                        Spacer(Modifier.height(8.dp))
                         Text("Score: ${state.score} / ${state.currentSet?.words?.size}", style = MaterialTheme.typography.bodyLarge)
                     }
-                    Spacer(Modifier.height(16.dp))
-                    Button(onClick = onClose) {
-                        Text("Back to Menu")
+                    Spacer(Modifier.height(24.dp))
+                    Row(
+                        horizontalArrangement = Arrangement.spacedBy(16.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Button(onClick = { viewModel.restartSession() }) {
+                            Text("Start Again")
+                        }
+                        OutlinedButton(onClick = onClose) {
+                            Text("Back to Menu")
+                        }
                     }
                 }
             }
@@ -80,7 +95,25 @@ fun SessionScreen(
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(padding)
-                        .padding(16.dp),
+                        .padding(16.dp)
+                        .focusRequester(columnFocusRequester)
+                        .focusable()
+                        .onPreviewKeyEvent { keyEvent ->
+                            if (keyEvent.type == KeyEventType.KeyDown && 
+                                (keyEvent.key == Key.Enter || keyEvent.key == Key.NumPadEnter)) {
+                                if (state.canMoveToNext) {
+                                    viewModel.nextWord()
+                                    true
+                                } else if (state.userInput.isNotBlank()) {
+                                    viewModel.checkAnswer()
+                                    true
+                                } else {
+                                    false
+                                }
+                            } else {
+                                false
+                            }
+                        },
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Card(
@@ -107,23 +140,7 @@ fun SessionScreen(
                         onValueChange = { viewModel.onUserInputChanged(it) },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .focusRequester(focusRequester)
-                            .onKeyEvent { keyEvent ->
-                                if (keyEvent.type == KeyEventType.KeyDown && 
-                                    (keyEvent.key == Key.Enter || keyEvent.key == Key.NumPadEnter)) {
-                                    if (state.canMoveToNext) {
-                                        viewModel.nextWord()
-                                        true
-                                    } else if (state.userInput.isNotBlank()) {
-                                        viewModel.checkAnswer()
-                                        true
-                                    } else {
-                                        false
-                                    }
-                                } else {
-                                    false
-                                }
-                            },
+                            .focusRequester(focusRequester),
                         label = { Text("Translation") },
                         isError = state.isCorrect == false,
                         readOnly = state.canMoveToNext,

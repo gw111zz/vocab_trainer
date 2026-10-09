@@ -6,7 +6,8 @@ import kotlinx.serialization.Serializable
 @Serializable
 enum class SessionMode {
     SpacedRepetition,
-    Testing
+    Testing,
+    FlashCards
 }
 
 @Serializable
@@ -30,3 +31,6 @@ data class Session(
     val mode: SessionMode,
     val direction: SessionDirection
 ) : RootRoute()
+
+@Serializable
+data class CategoryWordList(val setId: String) : RootRoute()

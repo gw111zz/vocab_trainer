@@ -13,6 +13,8 @@ import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
 import androidx.savedstate.serialization.SavedStateConfiguration
 import com.happycatsoftware.languagelearner.navigation.*
+import com.happycatsoftware.languagelearner.ui.screens.CategoryWordListScreen
+import com.happycatsoftware.languagelearner.ui.screens.FlashCardsScreen
 import com.happycatsoftware.languagelearner.ui.screens.ModeSelectionScreen
 import com.happycatsoftware.languagelearner.ui.screens.SessionScreen
 import com.happycatsoftware.languagelearner.ui.screens.VocabularyListScreen
@@ -27,6 +29,7 @@ private val navConfig = SavedStateConfiguration {
             subclass(VocabularyList::class, VocabularyList.serializer())
             subclass(ModeSelection::class, ModeSelection.serializer())
             subclass(Session::class, Session.serializer())
+            subclass(CategoryWordList::class, CategoryWordList.serializer())
         }
     }
 }
@@ -62,15 +65,32 @@ fun App() {
                             onModeSelected = { mode, direction ->
                                 backStack.add(Session(key.setId, mode, direction))
                             },
+                            onWordListSelected = {
+                                backStack.add(CategoryWordList(key.setId))
+                            },
                             onBack = { backStack.removeLast() }
                         )
                     }
                     entry<Session> { key ->
-                        SessionScreen(
+                        if (key.mode == SessionMode.FlashCards) {
+                            FlashCardsScreen(
+                                setId = key.setId,
+                                direction = key.direction,
+                                onClose = { backStack.removeLast() }
+                            )
+                        } else {
+                            SessionScreen(
+                                setId = key.setId,
+                                mode = key.mode,
+                                direction = key.direction,
+                                onClose = { backStack.removeLast() }
+                            )
+                        }
+                    }
+                    entry<CategoryWordList> { key ->
+                        CategoryWordListScreen(
                             setId = key.setId,
-                            mode = key.mode,
-                            direction = key.direction,
-                            onClose = { backStack.removeLast() }
+                            onBack = { backStack.removeLast() }
                         )
                     }
                 }

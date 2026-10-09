@@ -1,6 +1,8 @@
 package com.happycatsoftware.languagelearner.ui.screens
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
@@ -16,6 +18,7 @@ import com.happycatsoftware.languagelearner.navigation.SessionMode
 fun ModeSelectionScreen(
     setId: String,
     onModeSelected: (SessionMode, SessionDirection) -> Unit,
+    onWordListSelected: () -> Unit,
     onBack: () -> Unit
 ) {
     Scaffold(
@@ -34,6 +37,7 @@ fun ModeSelectionScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
+                .verticalScroll(rememberScrollState())
                 .padding(16.dp),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
@@ -62,6 +66,29 @@ fun ModeSelectionScreen(
             Spacer(Modifier.height(32.dp))
 
             Text(
+                "Flash Cards",
+                style = MaterialTheme.typography.headlineSmall,
+                modifier = Modifier.padding(bottom = 16.dp)
+            )
+
+            Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                ElevatedButton(
+                    onClick = { onModeSelected(SessionMode.FlashCards, SessionDirection.ItalianToEnglish) },
+                    modifier = Modifier.weight(1f).height(64.dp)
+                ) {
+                    Text("IT -> EN")
+                }
+                ElevatedButton(
+                    onClick = { onModeSelected(SessionMode.FlashCards, SessionDirection.EnglishToItalian) },
+                    modifier = Modifier.weight(1f).height(64.dp)
+                ) {
+                    Text("EN -> IT")
+                }
+            }
+
+            Spacer(Modifier.height(32.dp))
+
+            Text(
                 "Testing Mode",
                 style = MaterialTheme.typography.headlineSmall,
                 modifier = Modifier.padding(bottom = 16.dp)
@@ -80,6 +107,21 @@ fun ModeSelectionScreen(
                 ) {
                     Text("EN -> IT")
                 }
+            }
+
+            Spacer(Modifier.height(32.dp))
+
+            Text(
+                "Word List",
+                style = MaterialTheme.typography.headlineSmall,
+                modifier = Modifier.padding(bottom = 16.dp)
+            )
+
+            OutlinedButton(
+                onClick = onWordListSelected,
+                modifier = Modifier.fillMaxWidth().height(64.dp)
+            ) {
+                Text("View Words")
             }
         }
     }

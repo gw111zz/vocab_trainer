@@ -110,6 +110,24 @@ class SessionViewModel(
         }
     }
 
+    fun restartSession() {
+        viewModelScope.launch {
+            val allSets = repository.vocabularySets.first()
+            val set = allSets.find { it.id == setId }
+            val randomizedSet = set?.copy(words = set.words.shuffled())
+            _state.value = SessionState(
+                currentSet = randomizedSet,
+                currentIndex = 0,
+                isFinished = randomizedSet?.words.isNullOrEmpty(),
+                score = 0,
+                userInput = "",
+                feedbackMessage = null,
+                isCorrect = null,
+                canMoveToNext = false
+            )
+        }
+    }
+
     private fun updateSpacedRepetition(word: VocabularyWord, isCorrect: Boolean) {
         viewModelScope.launch {
             val newProficiency = if (isCorrect) {

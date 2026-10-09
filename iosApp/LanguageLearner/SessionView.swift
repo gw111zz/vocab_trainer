@@ -43,10 +43,15 @@ struct SessionView: View {
                             .font(.title2)
                     }
 
+                    Button("Start Again") {
+                        viewModel.restartSession()
+                    }
+                    .buttonStyle(.borderedProminent)
+
                     Button("Back to Menu") {
                         presentationMode.wrappedValue.dismiss()
                     }
-                    .buttonStyle(.borderedProminent)
+                    .buttonStyle(.bordered)
                 }
             } else if let currentWord = state.currentSet?.words[Int(state.currentIndex)] {
                 let prompt = direction == .italyantoenglish ? currentWord.original : currentWord.translation
