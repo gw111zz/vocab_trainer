@@ -1,9 +1,8 @@
 # Android Studio
-/*/build/
-/*/local.properties
-/*/out
-/*/*/build
-/*/*/production
+#*/local.properties
+#*/out
+#*/*/build
+#*/*/production
 captures/
 .navigation/
 *.ipr
@@ -77,3 +76,5 @@ build/
 
 # Local configuration file
 local.properties
+
+
