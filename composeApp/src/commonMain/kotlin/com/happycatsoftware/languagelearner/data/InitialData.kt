@@ -480,7 +480,10 @@ val initialItalianSets = listOf(
             VocabularyWord("che tempo fa a Roma?", "what's the weather in Rome?"),
             VocabularyWord("fa caldo oggi", "it's hot today"),
             VocabularyWord("ventoso", "windy"),
-            VocabularyWord("soleggiato", "sunny")
+            VocabularyWord("soleggiato", "sunny"),
+            VocabularyWord("fa vento", "it is windy"),
+            VocabularyWord("piove", "it is raining"),
+            VocabularyWord("è nuvoloso", "it is cloudy")
         )
     ),
     VocabularySet(
