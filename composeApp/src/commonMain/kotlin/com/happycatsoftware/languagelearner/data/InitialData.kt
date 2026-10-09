@@ -610,7 +610,11 @@ val initialItalianSets = listOf(
             VocabularyWord("il frigorifero", "fridge"),
             VocabularyWord("il forno", "oven"),
             VocabularyWord("il bollitore", "kettle"),
-            VocabularyWord("il lavandino", "sink")
+            VocabularyWord("il lavandino", "sink"),
+            VocabularyWord("il mestolo", "ladle"),
+            VocabularyWord("la ciotola", "bowl"),
+            VocabularyWord("la lavastoviglie", "dishwasher"),
+            VocabularyWord("il microonde", "microwave")
         )
     ),
     VocabularySet(
@@ -656,6 +660,18 @@ val initialItalianSets = listOf(
             VocabularyWord("Siamo a Positano", "We’re in Positano"),
             VocabularyWord("A che ora comincia?", "What time does it start?"),
             VocabularyWord("Alle otto", "At eight")
+        )
+    ),
+    VocabularySet(
+        id = "it-prepositions-combined",
+        name = "Combined Prepositions",
+        words = listOf(
+            VocabularyWord("Al supermercato", "To the supermarket"),
+            VocabularyWord("Dal negozio", "From the store"),
+            VocabularyWord("Sul menù", "On the menu"),
+            VocabularyWord("Alla stazione", "At the station"),
+            VocabularyWord("Dalla pizzeria", "From the pizzeria"),
+            VocabularyWord("Sulla strada", "On the street")
         )
     )
 )
